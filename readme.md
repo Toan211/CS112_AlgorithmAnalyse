@@ -15,4 +15,5 @@ Xuất ra giá trị của phần tử lớn thứ k trong mảng.
 LƯU Ý: Hàm nth_element của C++ bị cấm vì có hàm này rồi thì hông còn gì để làm.
 
 VÍ DỤ
+
 ![B1](image/QS.jpg)
