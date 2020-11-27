@@ -1,27 +1,21 @@
-
-
-
-def count(i, le):
-    if (i-1<0):
-        money = le[i]*le[i+1]
-    elif (i+1 == len(le)):
-        money = le[i+1]*le[i]
-    else:
-        money = le[i-1]*le[i]*le[i+1]
-    return money
-
-
-def comp(money, maxMoney):
-    if (money > maxMoney):
-        maxMoney = money
-
-def abc(le):
-    for i in range (0, len(le)):
-        money2 = count(i, le)
-        
-
+def getMax(A): 
+    N = len(A) 
+    A = [1] + A + [1]# Add Bordering Balloons 
+    dp = [[0 for x in range(N + 2)] for y in range(N + 2)]
+      
+    for length in range(1, N + 1): 
+        for left in range(1, N-length + 2): 
+            right = left + length -1
+            for last in range(left, right + 1): 
+                dp[left][right] = max(dp[left][right],  
+                                      dp[left][last-1] +
+                                      A[left-1]*A[last]*A[right + 1] + 
+                                      dp[last + 1][right]) 
+    return(dp[1][N]) 
+  
+# Driver code 
 n = int(input())
-k = []
+A = []
 for i in range (0,n):
-    k.append(int(input()))
-
+    A.append(int(input()))
+print(getMax(A))
