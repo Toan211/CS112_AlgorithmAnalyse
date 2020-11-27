@@ -1,7 +1,7 @@
-import profile
 
-import math
 
-c = 1000000007
+n = int(input())
+k = []
+for i in range (0,n):
+    k.append(input())
 
- #test git push
