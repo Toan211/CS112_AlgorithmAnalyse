@@ -226,3 +226,61 @@ Số tiền tối đa Bình kiếm được.
 ### VÍ DỤ
 
 ![Baloon](image/balloon.jpg)
+
+------------------------------
+---------------------------------------
+
+# Đếm tiền DP-DynamicPrograming
+ 
+
+ATM đang dần trở thành một phần thiết yếu của cuộc sống khi các doanh nghiệp đang chuyển hoàn toàn sang việc trả lương thông qua tài khoản ngân hàng. Một trong những tác vụ chính của ATM là tính toán để có thể lấy ra một lượng tiền chính xác như yêu cầu vào giao cho người sử dụng.
+
+Hộc tiền của ATM được phân thành nhiều ngăn với mỗi ngăn chứa tiền với mệnh giá khác nhau. Hiện nay hầu hết các ATM chúng ta có thể thấy tiền với những mệnh giá: 500.000đ, 200.000đ, 100.000đ, 50.000đ, 20.000đ.
+
+Hãy viết chương trình hỗ trợ ATM tính toán số tiền cần rút.
+
+### INPUT
+Một số nguyên dương n với n là bội số của 10.000 và giá trị n không vượt quá mười triệu. Đây là số tiền người sử dụng ATM muốn rút.
+
+### OUTPUT
+Số lượng tờ tiền ít nhất mà ATM có thể đưa ra sao cho vẫn vừa đủ số tiền người sử dụng muốn rút.. Nếu số tiền người dùng mong muốn không thể rút được từ các mệnh giá có trong ATM, xuất ra 0
+
+### VÍ DỤ
+
+M-ATM.jpg
+![Money-DP](image/M-ATM.jpg)
+
+----------------------------------
+----------------------------------------------
+
+# Số lượng đường đi ngắn nhất (shortestRoad)
+
+Cho một bảng hình chữ nhật. Trong đó có ô có thể đi vào có ô không thể đi vào. Một robot bắt đầu từ ô ở góc trái trên và muốn di chuyển xuống ô phải dưới. Robot chỉ có thể đi sang phải hoặc đi xuống vì đi bất cứ hướng nào khác sẽ làm đường đi dài thêm.
+
+Hãy tính xem có bao nhiêu cách để robot có thể đến đích.
+
+### INPUT
+Dòng đầu tiên là số dòng và số cột của bảng hình chữ nhật.
+
+Các dòng tiếp theo mỗi dòng chứa các số 0 và 1, tượng trưng cho các ô của bảng. Trong đó ô mang số 0 là không thể đi vào được và ô mang số 1 là có thể đi vào.
+
+### OUTPUT
+Số cách di chuyển của robot đến ô đích. Nếu có quá nhiều cách thì xuất ra số cách sau khi chia lấy dư cho 1013 + 1
+
+### VÍ DỤ
+
+
+--------------------
+----------------------------
+
+# dãy con đối xứng dài nhất (Palindrome)
+Cho một dãy ký tự. Hãy tìm dãy con đối xứng dài nhất của dãy đó.
+
+### INPUT
+Một chuỗi ký tự
+
+### OUTPUT
+Độ dài của dãy con đối xứng dài nhất
+
+### VÍ DỤ
+![Palindrome](image/Palindrome.jpg)
