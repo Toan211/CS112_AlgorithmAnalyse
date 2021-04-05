@@ -207,6 +207,27 @@ Xuất ra danh sách các đỉnh trên đường đi cách nhau bởi khoảng 
 ### VÍ DỤ:
 
 
+----------------------
+-----------------
+# 8-puzzle
+Viết chương trình tìm lời giải cho trường hợp tổng quát của bài toán 8-puzzle - là bài toán n*m-1 puzzle. Bằng phương pháp BACKTRACKING
+
+Tại mỗi trạng thái, các hành động hợp lệ sẽ là swap vị trí của ô số 0 (ô trống) với một ô lân cận với nó (tối đa là 4 ô lân cận). Mỗi hành động được mô tả bằng chênh lệch tọa độ (dòng và cột) giữa ô sẽ bị đổi chỗ trừ cho ô số 0, bao gồm 04 hành động là:  {0, -1}, {1, 0}, {0, +1}, {-1, 0}. Các hành động sẽ được xét theo thứ tự tăng dần.
+### INPUT
+
+Dòng đầu tiên chứa hai số nguyên dương n và m.
+
+n dòng tiếp theo mỗi dòng chứa m số. Đây là trạng thái bắt đầu của n*m-1 puzzle
+
+### OUTPUT:
+
+Danh sách các trạng thái từ trạng thái bắt đầu đến trạng thái kết thúc chuẩn của n*m-1 puzzle
+
+Cuối mỗi trạng thái cho một dòng chỉ có dấu - để nhận biết.
+
+### VÍ DỤ:
+
+
 
 -----------------------
 ----------------
@@ -268,6 +289,7 @@ Các dòng tiếp theo mỗi dòng chứa các số 0 và 1, tượng trưng cho
 Số cách di chuyển của robot đến ô đích. Nếu có quá nhiều cách thì xuất ra số cách sau khi chia lấy dư cho 1013 + 1
 
 ### VÍ DỤ
+![ShortestRoadNumber](image/ShortestRoadNumber.jpg)
 
 
 --------------------
@@ -284,3 +306,77 @@ Một chuỗi ký tự
 
 ### VÍ DỤ
 ![Palindrome](image/Palindrome.jpg)
+
+
+--------------------
+----------------------------
+
+# Bầu cử tổng thống mỹ (america)
+Mỹ có cái luật bầu cử rất là dị. Dân không trực tiếp bầu ra tổng thống mà các Đại cử tri của mỗi bang cử ra sẽ bầu ra tổng thống. Dĩ nhiên để chiều lòng dân thì các Đại cử tri này sẽ cam kết, thề thốt và hứa hẹn là nếu đa số cử tri phổ thông trong bang bầu cho ứng viên tổng thống nào thì tất cả đại cử tri của bang cũng bầu cho cùng ứng viên đó.
+
+Điều này nghe thì vui nhưng do các bố trí số đại cử tri và số cử tri phổ thông của các bang không đều nhau nên dẫn đến nếu ứng cử viên thắng cực kỳ sít sao ở vài bang nào đó sẽ đắc cử tổng thống, dù ông ta thua sạch bách không được phiếu cử tri phổ thông nào ở các bang còn lại.
+
+### INPUT
+Dòng đầu tiên chứa số n, là số lượng bang ở năm diễn ra bầu cử đó.
+
+n dòng tiếp theo chứa 03 thông tin cách nhau bởi khoảng trắng lần lượt là: tên viết tắt của bang, số phiếu đại cử tri của bang và số phiếu cử tri phổ thông của bang đó.
+
+### OUTPUT
+Số phiếu cử tri phổ thông tối thiểu cần phải thắng để trở thành tổng thống Mỹ.
+
+### VÍ DỤ
+
+
+---------------
+------------------------
+# Đường đi ngắn nhất nhiều tiền nhất
+Cho một bảng hình chữ nhật. Trong đó có ô mang một giá trị nhất định. Một robot bắt đầu từ ô ở góc trái trên và muốn di chuyển nhanh nhất xuống ô phải dưới. Robot chỉ có thể đi sang phải hoặc đi xuống vì đi bất cứ hướng nào khác sẽ làm đường đi dài thêm.
+
+Hãy tính xem đường đi mang lại tổng giá trị lớn nhất của các ô là bao nhiêu?
+
+### INPUT
+Dòng đầu tiên là số dòng và số cột của bảng hình chữ nhật.
+
+Các dòng tiếp theo mỗi dòng chứa các số nguyên dương và só 0, tượng trưng cho các ô của bảng. Trong đó ô mang số 0 là không thể đi vào được và ô mang số nguyên dương là giá trị của ô đó
+
+### OUTPUT
+Giá trị lớn nhất thu được.
+
+### VÍ DỤ
+
+
+---------
+---------------------
+
+# Bầu cử Mỹ, traceback
+Mỹ có cái luật bầu cử rất là dị. Dân không trực tiếp bầu ra tổng thống mà các Đại cử tri của mỗi bang cử ra sẽ bầu ra tổng thống. Dĩ nhiên để chiều lòng dân thì các Đại cử tri này sẽ cam kết, thề thốt và hứa hẹn là nếu đa số cử tri phổ thông trong bang bầu cho ứng viên tổng thống nào thì tất cả đại cử tri của bang cũng bầu cho cùng ứng viên đó.
+
+Điều này nghe thì vui nhưng do các bố trí số đại cử tri và số cử tri phổ thông của các bang không đều nhau nên dẫn đến nếu ứng cử viên thắng cực kỳ sít sao ở vài bang nào đó sẽ đắc cử tổng thống, dù ông ta thua sạch bách không được phiếu cử tri phổ thông nào ở các bang còn lại.
+
+### INPUT
+Dòng đầu tiên chứa số n, là số lượng bang ở năm diễn ra bầu cử đó.
+
+n dòng tiếp theo chứa 03 thông tin cách nhau bởi khoảng trắng lần lượt là: tên viết tắt của bang, số phiếu đại cử tri của bang và số phiếu cử tri phổ thông của bang đó.
+
+### OUTPUT
+Danh sách các bang cần thắng để thành tổng thống với số phiếu cử tri phổ thông tối thiểu. Nếu có nhiều danh sách có cùng số phiếu cử tri phổ thông tối thiểu, xuất cái nào cũng được.
+
+### VÍ DỤ   
+
+---------------
+------------------------
+# Đường đi ngắn nhất nhiều tiền nhất, traceback
+Cho một bảng hình chữ nhật. Trong đó có ô mang một giá trị nhất định. Một robot bắt đầu từ ô ở góc trái trên và muốn di chuyển xuống ô phải dưới. Robot chỉ có thể đi sang phải hoặc đi xuống vì đi bất cứ hướng nào khác sẽ làm đường đi dài thêm.
+
+Hãy tính xem đường đi mang lại tổng giá trị lớn nhất của các ô là bao nhiêu?
+
+### INPUT
+Dòng đầu tiên là số dòng và số cột của bảng hình chữ nhật.
+
+Các dòng tiếp theo mỗi dòng chứa các số 0 và 1, tượng trưng cho các ô của bảng. Trong đó ô mang số 0 là không thể đi vào được và ô mang số 1 là có thể đi vào.
+
+### OUTPUT
+Giá trị lớn nhất thu được khi đến đích và một trong các đường đi để thu được giá trị đó. Đường đi được xuất với tọa độ mỗi ô trên một dòng, truy ngược từ ô đích lên ô bắt đầu.
+
+### VÍ DỤ
+
